@@ -181,7 +181,7 @@ function hotelCards(results, status){
         if(("website" in place) == true){
             var website = place.website;
         } else{
-            var website = "!!!!!!!!!!!!!!!!!!!!!!SITE UL DE LA HOST AICI";
+            var website = "https://rottenego.github.io/atestatinfo/";
         }
         
         $("#hotelCards").append(
@@ -231,7 +231,7 @@ function attrCards(results, status){
         if(("website" in place) == true){
             var website = place.website;
         } else{
-            var website = "!!!!!!!!!!!!SITE UL DE LA HOST AICI";
+            var website = "https://rottenego.github.io/atestatinfo/";
         }
         
         $("#attractionCards").append(
