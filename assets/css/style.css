@@ -1,0 +1,481 @@
+/* font-ul de la site */
+
+@import url('https://fonts.googleapis.com/css2?family=Exo&family=Open+Sans&display=swap');
+
+/* headere */
+
+.grey-header{
+    font-family: "Exo", sans-serif;
+    font-size: 2.5rem;
+    margin: 3rem;
+    color: #3D3D3D;
+    text-transform: uppercase;
+    letter-spacing: 0.2rem;
+}
+
+.white-header{
+    font-family: "Exo", sans-serif;
+    font-size: 2.5rem;
+    margin: 3rem;
+    color: #ffffff;
+    text-transform: uppercase;
+    letter-spacing: 0.2rem;
+}
+
+.orange-header{
+    font-family: "Exo", sans-serif;
+    font-size: 2.5rem;
+    margin: 3rem;
+    color: #F2AB9B;
+    text-transform: uppercase;
+    letter-spacing: 0.2rem;
+}
+
+.callout-header{
+    font-family: "Exo", sans-serif;
+    font-size: 6vw;
+    color: white;
+}
+
+.callout-header-mobile{
+    font-family: "Exo", sans-serif;
+    font-size: 13vw;
+    color: white;
+}
+
+.search-header{
+    font-family: "Exo", sans-serif;
+    font-size: 2.3rem;
+    margin: 2rem;
+    color: white;
+}
+
+.grey-modal-header{
+    font-family: "Exo", sans-serif;
+    font-size: 3rem;
+    margin: 0.5rem;
+    color: #3d3d3d;
+    text-transform: uppercase;
+    letter-spacing: 0.2rem;
+}
+
+.orange-modal-header{
+    font-family: "Exo", sans-serif;
+    font-size: 3rem;
+    margin: 0.5rem;
+    color: #F2AB9B;
+    text-transform: uppercase;
+    letter-spacing: 0.2rem;
+}
+
+.success-modal-title{
+    color: #F2AB9B;
+    font-family: "Exo", sans-serif;
+    text-transform: uppercase;
+}
+
+.attraction-grey-header{
+    font-family: "Exo", sans-serif;
+    font-size: 2.5rem;
+    margin: 3rem;
+    color: #3D3D3D;
+    text-transform: uppercase;
+    letter-spacing: 0.2rem;
+}
+
+@media (min-width: 300px) and (max-width: 375px) {
+    .attraction-grey-header{
+    font-family: "Exo", sans-serif;
+    font-size: revert;
+    margin: 3rem;
+    color: #3D3D3D;
+    text-transform: uppercase;
+    letter-spacing: 0.2rem;
+    }
+}
+
+/* butoane */
+
+.btn-black{
+    border: 2px solid black;
+    color: black;
+    font-family: "Exo", sans-serif;
+}
+
+.btn-white{
+    border: 2px solid white;
+    color: white;
+    font-family: "Exo", sans-serif;
+}
+
+.btn-close-modal{
+    font-size: 3rem;
+}
+
+.btn-orange{
+    border: 2px solid #F2AB9B;
+    color: white;
+    font-family: "Exo", sans-serif;
+    background-color: #F2AB9B;
+}
+
+.btn-landing{
+    font-size: 1.2vw;
+}
+
+.btn-grey{
+    border: 2px solid #A6ABAB;
+    color: white;
+    font-family: "Exo", sans-serif;
+    background-color: #A6ABAB;
+}
+
+/* breakpoints ca să fie responsive */
+
+@media (min-width: 300px) {
+    .callout-container{
+    height: 75vh;
+    width: 100%;
+    background-image: url('https://images.unsplash.com/photo-1499678329028-101435549a4e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=576&q=80');
+    background-size: cover;
+    }
+}
+
+@media (min-width: 576px) {
+    .callout-container{
+    height: 75vh;
+    width: 100%;
+    background-image: url('https://images.unsplash.com/photo-1499678329028-101435549a4e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=768&q=80');
+    background-size: cover;
+    }
+}
+
+@media (min-width: 768px) {
+    .callout-container{
+    height: 75vh;
+    width: 100%;
+    background-image: url('https://images.unsplash.com/photo-1499678329028-101435549a4e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=992&q=80');
+    background-size: cover;
+    }
+}
+
+@media (min-width: 992px) {
+    .callout-container{
+    height: 75vh;
+    width: 100%;
+    background-image: url('https://images.unsplash.com/photo-1499678329028-101435549a4e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1200&q=80');
+    background-size: cover;
+    }
+}
+
+@media (min-width: 1200px) {
+    .callout-container{
+    height: 75vh;
+    width: 100%;
+    background-image: url('https://images.unsplash.com/photo-1499678329028-101435549a4e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2500&q=80');
+    background-size: cover;
+    }
+}
+
+/* callout */
+
+.callout-section{
+    position: relative;
+    top: 4rem;
+    left: 2rem;
+}
+
+.callout-section-mobile{
+    position: relative;
+    top: 8rem;
+}
+
+.callout-text{
+    font-family: "Open Sans",sans-serif;
+    font-size: 2.5vmin;
+    color: white;
+}
+
+.callout-text-mobile{
+    font-family: "Open Sans",sans-serif;
+    font-size: 4.5vw;
+    color: white;
+}
+
+/*bara de navigație*/
+
+.sidenav {
+  height: 75vh;
+  width: 0;
+  position: fixed; 
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: rgba(61, 61, 61, 0.9);
+  overflow-x: hidden;
+  padding-top: 60px; 
+  transition: 0.5s;
+}
+
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 122%;
+  color: white;
+  display: block;
+  transition: 0.3s;
+  font-family: "Exo", sans-serif;
+  text-transform: uppercase;
+}
+
+.sidenav a:hover {
+  color: #A6ABAB;
+}
+
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+  color: #A6ABAB;
+}
+
+#main {
+  transition: margin-left .5s;
+  padding: 20px;
+}
+.fa-bars{
+    color: white;
+    font-size: 4vh;
+}
+
+/* search */
+
+.search-container{
+    background-color: #3D3D3D;
+    height: max-content;
+    padding-bottom: 3rem;
+}
+
+.search-bar{
+    width: 100%;
+    border: 2px solid #3D3D3D;
+}
+
+input::placeholder {
+  color: #3D3D3D;
+  font-family: "Open Sans", sans-serif;
+}
+
+#rating {
+    font-size: 13px;
+    font-family: "Open Sans", sans-serif;
+}
+
+/* recomandări */
+
+.recommendation-city{
+    color: white;
+    font-family: "Exo", sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    position: relative;
+    top: 7rem;
+    font-size: 200%;
+}
+
+.recommendation-country{
+    color: white;
+    font-family: "Open Sans", sans-serif;
+    text-transform: uppercase;
+    position: relative;
+    top: 7rem;
+}
+
+.venice{
+    height: 20rem;
+    background: 
+    linear-gradient(
+      rgba(0, 0, 0, 0.1),
+      rgba(0, 0, 0, 0.1)
+    ),
+    url(https://images.unsplash.com/photo-1520874628750-bed9c0a19086?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1480&q=80);
+    background-size: cover;
+    padding: 0;
+    margin: 0.4rem;
+}
+
+.sydney{
+    height: 20rem;
+    background: 
+    linear-gradient(
+      rgba(0, 0, 0, 0.1),
+      rgba(0, 0, 0, 0.1)
+    ),
+    url(https://images.unsplash.com/photo-1551352912-484163ad5be9?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1502&q=80);
+    background-size: cover;
+    padding: 0;
+    margin: 0.4rem;
+}
+
+.toronto{
+    height: 20rem;
+    background: 
+    linear-gradient(
+      rgba(0, 0, 0, 0.1),
+      rgba(0, 0, 0, 0.1)
+    ),
+    url(https://images.unsplash.com/photo-1486325212027-8081e485255e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1500&q=80);
+    background-size: cover;
+    padding: 0;
+    margin: 0.4rem;
+}
+
+.cape{
+    height: 20rem;
+    background: 
+    linear-gradient(
+      rgba(0, 0, 0, 0.1),
+      rgba(0, 0, 0, 0.1)
+    ),
+    url(https://images.unsplash.com/photo-1588455471455-4b28e9ab3cd5?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1403&q=80);
+    background-size: cover;
+    padding: 0;
+    margin: 0.4rem;  
+}
+
+.zurich{
+    height: 20rem;
+    background: 
+    linear-gradient(
+      rgba(0, 0, 0, 0.1),
+      rgba(0, 0, 0, 0.1)
+    ),
+    url(https://images.unsplash.com/photo-1515488764276-beab7607c1e6?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1390&q=80);
+    background-size: cover;
+    padding: 0;
+    margin: 0.4rem;
+}
+
+.marrakech{
+    height: 20rem;
+    background: 
+    linear-gradient(
+      rgba(0, 0, 0, 0.1),
+      rgba(0, 0, 0, 0.1)
+    ),
+    url(https://images.unsplash.com/photo-1586022971028-a3806c3c8896?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1500&q=80);
+    background-size: cover;
+    padding: 0;
+    margin: 0.4rem;
+}
+
+/* Section: Modal*/
+
+#modal-country{
+    color: #3d3d3d;
+    font-family: "Open Sans", sans-serif;
+    text-transform: uppercase;
+    font-size: 1rem;
+}
+
+.modal-auto-country{
+    color: #3d3d3d;
+    font-family: "Open Sans", sans-serif;
+    text-transform: uppercase;
+    font-size: 1rem;
+}
+
+#mapAuto{
+    height: 80vh;
+}
+
+.modal-guide{
+    font-family: "Exo", sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    font-size: 1.5rem;
+    color: #A6ABAB;
+}
+
+.grey-modal-title{
+    font-family: "Exo", sans-serif;
+    font-size: 1.5rem;
+    margin: 1rem;
+    color: #3d3d3d;
+    text-transform: uppercase;
+    letter-spacing: 0.2rem;
+}
+
+.quick-list{
+    list-style-type: none;
+    padding: 0px;
+}
+
+.quick-icon{
+    font-size: 1.2rem;
+    padding-right: 0.5rem;
+}
+
+.quick-item{
+    margin-bottom: 1rem;
+    font-family: "Open Sans", sans-serif;
+}
+
+.hotel-image{
+    height: 15rem;
+}
+
+.card-hr{
+    border: 1px solid #A6ABAB;
+}
+
+.card-list{
+    list-style: none;
+    padding: 0;
+}
+
+.card-item{
+    font-family: "Exo", sans-serif;
+}
+
+.card-img-top{
+    height: 250px;
+}
+
+.hotelText{
+    color: #46B39D;
+    font-size: 1.1em;
+}
+
+.auto-image-results{
+    height: 250px;
+    width: 250px;
+}
+
+/* contactează-ne */
+.contact-container{
+    background-color: #3D3D3D;
+}
+
+/* mesajul de succes */
+.success-text{
+    font-family: "Open Sans",sans-serif;
+}
+
+/* antet*/
+.footer-container{
+    background-color: #A6ABAB;
+    padding: 5px 0 5px 0;
+    font-family: "Exo", sans-serif;
+}
+
+footer{
+    font-size: 1.5rem;
+    color: white;
+}
+
+.footer-icon{
+    color: white;
+}

@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Călătorește ușor</title> 
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/1c9dd84298.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/hover.css/2.3.1/css/hover-min.css" type="text/css">
+    <link rel="stylesheet" href="assets/css/style.css">  
+</head>
+<body>
+    <!--Section: Callout -->  
+    <section class="container-fluid callout-container">
+        
+        <!-- bara de navigație-->
+        <nav class="navbar">
+            <div id="mySidenav" class="sidenav">
+                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"><i class="fas fa-times"></i></a>
+                <a onclick="closeNav()" href="#search" class="nav-link">Caută</a>
+                <a onclick="closeNav()" href="#recommendations" class="nav-link">Recomandări</a>
+                <a onclick="closeNav()" href="#contact" class="nav-link">Contact</a>
+            </div>
+            <a onclick="openNav()" class="navbar-toggler hvr-shrink"><i class="fas fa-bars"></i></a>
+            <button onclick="document.location='#recommendations'" class="btn btn-orange btn-landing btn-large d-none d-sm-block ml-auto">Inspiră-te!</button>
+        </nav>
+
+        <!-- Callout: text-->
+        <div id="main" class="d-none d-sm-block col-sm-6 callout-section">
+            <h1 class="callout-header">Călătorește ușor!</h1>
+            <p class="callout-text">Caută-ți următoarea destinație de vacanță sau caută printre destinațiile recomandate de noi.</p>
+        </div>
+
+        <!-- Callout: mobile text-->
+        <div class="text-center d-sm-none callout-section-mobile">
+            <h1 class="callout-header-mobile">Călătorește ușor!</h1>
+            <p class="callout-text-mobile">Caută-ți următoarea destinație de vacanță sau caută printre destinațiile recomandate de noi.</p>
+        </div>
+    </section>
+
+    <!--bara de search --> 
+    <section id="search" class="container-fluid search-container text-center">
+        <div class="row">
+            <div class="col-12">
+                <h2 class="search-header">Caută-ți următoarea destinație</h2>
+            </div>
+        </div>
+        <div class="row">
+            <div class=" mx-auto col-12 col-sm-8 mb-3">
+                <form class="search-form">
+                    <input class="search-bar form-control-lg" id="autocomplete" placeholder="scrie un oraș..." type="text" />
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- recomandările noastre -->
+    <section id="recommendations" class="container pb-5">
+        <div class="row">
+            <div class="col-12 text-center">
+                <h2 class="grey-header">Destinațiile recomandate de noi</h2>
+            </div>
+        </div>
+        <div class="row">
+            <div class="top-picks guide-html feature-sydney feature col-12 col-md-6 col-lg-4 text-center hvr-shrink">
+                <div class="sydney" data-toggle="modal" data-target="#modal-page">
+                    <h3 class="recommendation-city">Sydney</h3>
+                    <span class="recommendation-country">Australia</span>
+                </div>
+            </div>
+            <div class="top-picks guide-html feature-toronto feature col-12 col-md-6 col-lg-4 text-center hvr-shrink">
+                <div class="toronto" data-toggle="modal" data-target="#modal-page">
+                    <h3 class="recommendation-city">Toronto</h3>
+                    <span class="recommendation-country">Canada</span>
+                </div>
+            </div>
+            <div class="top-picks guide-html feature-cape feature col-12 col-md-6 col-lg-4 text-center hvr-shrink">
+                <div class="cape" data-toggle="modal" data-target="#modal-page">
+                    <h3 class="recommendation-city">Cape Town</h3>
+                    <span class="recommendation-country">Afrida de Sud</span>
+                </div>
+            </div>
+            <div class="top-picks guide-html feature-zurich feature col-12 col-md-6 col-lg-4 text-center hvr-shrink">
+                <div class="zurich" data-toggle="modal" data-target="#modal-page">
+                    <h3 class="recommendation-city">Zurich</h3>
+                    <span class="recommendation-country">Elveția</span>
+                </div>
+            </div>
+            <div class="top-picks guide-html feature-venice feature col-12 col-md-6 col-lg-4 text-center hvr-shrink">
+                <div class="venice" data-toggle="modal" data-target="#modal-page">
+                    <h3 class="recommendation-city">Veneția</h3>
+                    <span class="recommendation-country">Italia</span>
+                </div>
+            </div>
+            <div class="top-picks guide-html feature-marrakech feature col-12 col-md-6 col-lg-4 text-center hvr-shrink">
+                <div class="marrakech" data-toggle="modal" data-target="#modal-page">
+                    <h3 class="recommendation-city">Marrakech</h3>
+                    <span class="recommendation-country">Maroc</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section: Modal -->
+    <div class="modal fade" id="modal-page" aria-hidden="true">
+        <div class="modal-dialog modal-xl">
+            <div class="modal-content container">
+                <div class="row">
+                    <div class="col-12">
+                        <button type="button" class="close ml-auto btn-close-modal" data-dismiss="modal" aria-label="Close" onclick="removeCards()">
+                        <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-12 text-center">
+                        <h2 id="modal-auto-header" class="orange-modal-header"></h2>
+                        <span id="modal-auto-country" class="modal-auto-country"></span>
+                    </div>
+                </div>
+                <div id="quick-guide" class="row"></div>
+                <div class="container">
+                    <div class="col-12">
+                        <h5 class="grey-modal-title">Puncte de interes</h5>
+                    </div>
+                </div>
+                <div id="mapAuto"></div>
+                <div class="modal-body">
+                    <div class="col-12">
+                        <h2 class=" text-center attraction-grey-header">Atracții de top</h2>
+                    </div>
+                    <div id="attractionCards" class="row"></div>
+                    <div class="col-12">
+                        <h2 class=" text-center attraction-grey-header">Hoteluri</h2>
+                    </div>
+                    <div id="topPicks" class="row"></div>
+                    <div id="hotelCards" class="row"></div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-grey" data-dismiss="modal" onclick="removeCards()">Închide</button>   
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- secțiunea de contact a paginii -->
+    <section id="contact" class="container-fluid contact-container p-2">
+        <div class="row">
+            <div class="col-12 text-center">
+                <h2 class="white-header">Contactează-ne!</h2>
+            </div>
+        </div>
+        <form onsubmit="return sendMail(this);" class="container" id="contactForm">
+            <div class="row">
+                <div class="col-12 col-md-6">
+                    <div class="row">
+                        <div class="col-12 mb-3">
+                            <input type="text" name="name" class="form-control" id="name" placeholder="Nume" required>
+                        </div>   
+                    </div>
+                    <div class="row">
+                        <div class="col-12 mb-3">
+                            <input type="email" name="email" class="form-control" id="email" placeholder="Adresă de mail" required>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-12 mb-3">
+                            <input type="text" name="number" class="form-control" id="number" placeholder="Numărul de telefon">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6">
+                    <div class="form-group">
+                        <textarea class="form-control" name="text" rows="10" id="enquiry" placeholder="Transmite-ne un mesaj." required></textarea>
+                    </div>
+                    <div class="text-right">
+                        <button type="submit" class="btn btn-white btn-lg mt-1 mb-2">Trimite</button>
+                    </div>
+                </div>
+            </div>
+        </form>
+    </section>
+
+    <!-- în cazul în care formularul de contact a fost completat cu succes-->
+    <div class="modal fade" id="successModal" role="dialog">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title success-modal-title">Success!</h4>
+                </div>
+                <div class="modal-body">
+                    <p class="success-text">Mesajul dumneavoastră a fost trimis!</p>
+                    <p class="success-text">Vă rugăm să ne alocați 24 de ore pentru a răspunde.</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-orange" data-dismiss="modal" onclick="removeText()">Închide</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- antetul paginii-->
+    <footer class="container-fluid footer-container">
+        <div class="row">
+            <div class="col-sm-6">
+                <h5 class="m-3">Călătorește usor 2021 <i class="far fa-copyright"></i></h5>
+            </div>
+            <div class="col-sm-6">
+                <ul class="list-inline m-3 text-right">
+                    <li class="list-inline-item"><a class="footer-icon" href="https://en-gb.facebook.com/" target="_blank" rel="noopener noreferrer"><i class="fab fa-facebook"></i></a></li>
+                    <li class="list-inline-item"><a class="footer-icon" href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer"><i class="fab fa-instagram"></i></a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+    
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script> 
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+    <script src="assets/js/script.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCdBqz5aZKn5u3_GeKoUVzRZS6bsw33p_o&libraries=places" defer></script>
+    <script src="assets/js/sendEmail.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js"></script>
+    <script type="text/javascript">
+        (function(){
+            emailjs.init("user_c2NKEhzlIuDc2DhsKTqIF");
+        })();
+    </script> 
+</body>
+</html>
